@@ -13,7 +13,7 @@
         </Console>
         <File name="File1" fileName="violations.log" append="true">
             <PatternLayout pattern="${LOG_PATTERN}"/>
-            <ThresholdFilter level="VIOLATION" onMatch="ACCEPT" onMismatch="DENY"/>
+            <LevelRangeFilter minLevel="VIOLATION" maxLevel="VIOLATION" onMatch="ACCEPT" onMismatch="DENY"/>
         </File>
         <RollingFile
                 name="rollingFile"
